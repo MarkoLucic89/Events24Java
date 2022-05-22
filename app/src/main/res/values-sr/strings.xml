@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Events24</string>
+    <string name="login_description_text_1">Online karte za sve sto pozelis!</string>
+    <string name="login_description_text_2">Ako uzivas na odmoru ili na suncanim praznicima, uvek mozes poboljsati iskustvo sa malim stvarima.</string>
+    <string name="button_login">Prijavi se</string>
+    <string name="button_registration">Registruj se</string>
+    <string name="log_in">Uloguj se</string>
+    <string name="password">Lozinka</string>
+    <string name="forgot_password">Zaboravljena lozinka?</string>
+    <string name="or">ili</string>
+    <string name="repeat_password">Potvrdi lozinku</string>
+    <string name="text_registration_success">Registracija uspesna</string>
+    <string name="text_registration_failed">Registracija neuspesna, pokusajte ponovo</string>
+    <string name="text_check_email">Proveri e-mail</string>
+    <string name="menu_home">Pocetna</string>
+    <string name="menu_search">Pretrazi</string>
+    <string name="menu_tickets">Karte</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_favorites">Sacuvano</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="show_more">Pogledaj sve</string>
+    <string name="hint_search">Pretrazi</string>
+    <string name="button_log_out">Izloguj se</string>
+    <string name="settings">Podesavanja</string>
+    <string name="select_picture">Izaberi sliku</string>
+    <string name="name">Ima</string>
+    <string name="surname">Prezime</string>
+    <string name="email">E-mail</string>
+    <string name="send_to_email">Posalji na email</string>
+    <string name="address">Adresa</string>
+    <string name="phone">Telefon</string>
+    <string name="city">Grad</string>
+    <string name="save">Sacuvaj</string>
+    <string name="notifications">Notifikacije</string>
+    <string name="language">Jezik</string>
+    <string name="support">Podrska</string>
+    <string name="help_centre">Pomocni centar</string>
+    <string name="terms_and_conditions">Uslovi koriscenja</string>
+    <string name="top_events">Najtrazeniji dogadjaji</string>
+    <string name="concerts">Koncerti</string>
+    <string name="theatre">Pozoriste</string>
+    <string name="sport">Sport</string>
+    <string name="dialog_pick_image_title">Izaberite sliku</string>
+    <string name="dialog_pick_image_message">Izaberite destinaciju slike</string>
+    <string name="dialog_pick_image_gallery">Galerija</string>
+    <string name="dialog_pick_image_camera">Kamera</string>
+    <string name="dialog_permission_title">Potrebna dozvola</string>
+    <string name="dialog_permission_storage_message">Ova dozvola je neophodna da biste imali pristup eksternoj memoriji.</string>
+    <string name="dialog_permission_camera_message">Ova dozvola je neophodna da biste imali pristup kameri.</string>
+    <string name="ok">potvrdi</string>
+    <string name="cancel">otkazi</string>
+
+
+    <string-array name="app_languages">
+        <item>Engleski</item>
+        <item>Srpski</item>
+    </string-array>
+    <string-array name="app_languages_string">
+        <item>en</item>
+        <item>sr</item>
+    </string-array>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371812220056",
+    "project_id": "events24project-6f5eb",
+    "storage_bucket": "events24project-6f5eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371812220056:android:58376ebb0d04bd8724e4ed",
+        "android_client_info": {
+          "package_name": "com.lucic.cubes.events24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371812220056-lfjps2qohe21lkchlhgjspvrog385dkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBFrK-LOYdV0FJuwQFRX9uxE47IHayze4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371812220056-lfjps2qohe21lkchlhgjspvrog385dkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
