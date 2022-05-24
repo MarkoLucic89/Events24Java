@@ -27,6 +27,7 @@ import com.lucic.cubes.events24.R;
 import com.lucic.cubes.events24.data.DataContainer;
 import com.lucic.cubes.events24.data.model.User;
 import com.lucic.cubes.events24.databinding.ActivityEditProfileBinding;
+import com.lucic.cubes.events24.ui.adapter.EventsDetailAdapter;
 import com.lucic.cubes.events24.ui.view.EventsMessage;
 import com.squareup.picasso.Picasso;
 
@@ -50,6 +51,7 @@ public class EditProfileActivity extends BasicActivity {
 
     private ActivityEditProfileBinding binding;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +63,7 @@ public class EditProfileActivity extends BasicActivity {
         setListeners();
 
     }
+
 
     private void setListeners() {
         binding.imageViewProfileImage.setOnClickListener(view -> pickImage());

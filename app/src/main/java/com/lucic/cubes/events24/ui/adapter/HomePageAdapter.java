@@ -22,6 +22,7 @@ public class HomePageAdapter extends RecyclerView.Adapter {
     private ArrayList<Event> sports;
     private ArrayList<Event> theatres;
     private ArrayList<Event> topList;
+    private OnItemClickListener listener;
 
     public HomePageAdapter(Context context, ArrayList<Event> topEventsList, ArrayList<Event> events) {
         this.context = context;
@@ -118,6 +119,9 @@ public class HomePageAdapter extends RecyclerView.Adapter {
         return 4;
     }
 
+    public void setListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
 
     private class FirstViewHolder extends RecyclerView.ViewHolder {
 
@@ -126,8 +130,14 @@ public class HomePageAdapter extends RecyclerView.Adapter {
         public FirstViewHolder(RvItemHorizontalRvBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+
         }
     }
+
+    public interface OnItemClickListener {
+        void onItemClick(Event event);
+    }
+
 
 
 }

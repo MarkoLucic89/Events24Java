@@ -49,6 +49,10 @@
     <string name="dialog_permission_camera_message">Ova dozvola je neophodna da biste imali pristup kameri.</string>
     <string name="ok">potvrdi</string>
     <string name="cancel">otkazi</string>
+    <string name="concert">KONCERT</string>
+    <string name="pictures_and_video">Slike i video</string>
+    <string name="about_artist">O izvodjacu</string>
+    <string name="News">Vesti</string>
 
 
     <string-array name="app_languages">

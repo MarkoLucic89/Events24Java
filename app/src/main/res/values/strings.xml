@@ -50,7 +50,11 @@
     <string name="ok">ok</string>
     <string name="cancel">cancel</string>
     <string name="toast_user_successfully_uploaded">Profile info successfully uploaded.</string>
-
+    <string name="concert">KONCERT</string>
+    <string name="ticket">Ticket</string>
+    <string name="pictures_and_video">Pictures and videos</string>
+    <string name="about_artist">About artist</string>
+    <string name="News">News</string>
 
 
     <string-array name="app_languages">

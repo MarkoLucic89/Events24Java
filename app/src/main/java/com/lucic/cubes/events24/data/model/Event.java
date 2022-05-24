@@ -1,8 +1,10 @@
 package com.lucic.cubes.events24.data.model;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Map;
 
-public class Event {
+public class Event implements Serializable {
 
     public String title;
     public String date;
@@ -13,65 +15,108 @@ public class Event {
     public String location;
     public String author;
     public long viewCount;
+    public ArrayList<Ticket> tickets;
+    public ArrayList<String> pictures;
+    public AboutArtist aboutArtist;
+    public ArrayList<News> newsList;
 
     public Event() {
-
+        this.tickets = new ArrayList<>();
+        this.pictures = new ArrayList<>();
+        this.newsList = new ArrayList<>();
     }
 
     public Event(Map<String, Object> map) {
 
+        this.tickets = new ArrayList<>();
+        this.pictures = new ArrayList<>();
+        this.newsList = new ArrayList<>();
+
         if (map.containsKey("title")) {
-            title = (String) map.get("title");
+            this.title = (String) map.get("title");
         } else {
-            title = "";
+            this.title = "";
         }
 
         if (map.containsKey("date")) {
-            date = (String) map.get("date");
+            this.date = (String) map.get("date");
         } else {
-            date = "";
+            this.date = "";
         }
 
         if (map.containsKey("time")) {
-            time = (String) map.get("time");
+            this.time = (String) map.get("time");
         } else {
-            time = "";
+            this.time = "";
         }
 
         if (map.containsKey("type")) {
-            type = (String) map.get("type");
+            this.type = (String) map.get("type");
         } else {
-            type = "";
+            this.type = "";
         }
 
         if (map.containsKey("imageBig")) {
-            imageBig = (String) map.get("imageBig");
+            this.imageBig = (String) map.get("imageBig");
         } else {
-            imageBig = "";
+            this.imageBig = "";
         }
 
         if (map.containsKey("imageSmall")) {
-            imageSmall = (String) map.get("imageSmall");
+            this.imageSmall = (String) map.get("imageSmall");
         } else {
-            imageSmall = "";
+            this.imageSmall = "";
         }
 
         if (map.containsKey("location")) {
-            location = (String) map.get("location");
+            this.location = (String) map.get("location");
         } else {
-            location = "";
+            this.location = "";
         }
 
         if (map.containsKey("author")) {
-            author = (String) map.get("author");
+            this.author = (String) map.get("author");
         } else {
-            author = "";
+            this.author = "";
         }
 
         if (map.containsKey("viewCount")) {
-            viewCount = (long) map.get("viewCount");
+            this.viewCount = (long) map.get("viewCount");
         } else {
-            viewCount = 0;
+            this.viewCount = 0;
+        }
+
+        if (map.containsKey("tickets")) {
+
+            ArrayList<Map<String, String>> maps = (ArrayList<Map<String, String>>) map.get("tickets");
+
+            for (Map<String, String> mapTicket : maps) {
+                Ticket ticket = new Ticket(mapTicket);
+                this.tickets.add(ticket);
+            }
+
+        } else {
+
+        }
+
+        if (map.containsKey("pictures")) {
+            this.pictures = (ArrayList<String>) map.get("pictures");
+        }
+
+        if (map.containsKey("aboutArtist")) {
+            this.aboutArtist = new AboutArtist((Map<String, String>) map.get("aboutArtist"));
+        } else {
+            this.aboutArtist = new AboutArtist();
+        }
+
+        if (map.containsKey("news")) {
+
+            ArrayList<Map<String, String>> maps = (ArrayList<Map<String, String>>) map.get("news");
+
+            for (Map<String, String> mapNews : maps) {
+                News news = new News(mapNews);
+                this.newsList.add(news);
+            }
         }
 
 

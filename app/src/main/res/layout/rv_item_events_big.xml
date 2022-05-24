@@ -4,13 +4,12 @@
     android:layout_width="@dimen/rv_item_big_width"
     android:layout_height="@dimen/rv_item_big_height"
     android:layout_margin="@dimen/margin_medium"
-    android:background="@color/purple"
+    android:background="@color/purple_dark"
     app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/purple">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -40,9 +39,11 @@
             android:id="@+id/textViewDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_main"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
             android:text="Date"
-            android:textColor="@color/purple_light"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_small"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +53,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background_transparent_dark_view" />
+            android:background="@drawable/background_gradient_view_dark" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
